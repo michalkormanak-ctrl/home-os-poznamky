@@ -1,0 +1,17 @@
+{
+  "name": "Home OS Poznámky",
+  "short_name": "Poznámky",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f2f5fa",
+  "theme_color": "#183153",
+  "lang": "sk",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
