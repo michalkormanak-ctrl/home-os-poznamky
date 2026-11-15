@@ -9,7 +9,7 @@ $('proposals').addEventListener('click',e=>{if(e.target.id!=='saveBrief')return;
 // SpeechRecognition is unavailable or unreliable in many Android embedded browsers.
 // Native keyboard dictation remains available without this browser API.
 let activeSpeech=null;
-function speechStatus(message){$('speechStatus').textContent=message}
+function speechStatus(message){const el=$('briefStatus')||$('noteStatus');if(el)el.textContent=message}
 function startSpeech(target,button,continuous){
  const Speech=window.SpeechRecognition||window.webkitSpeechRecognition;
  if(activeSpeech){activeSpeech.stop();return}
